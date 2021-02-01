@@ -8,11 +8,123 @@
     <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script>  -->
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
     <link rel="stylesheet" href="main.scss">
-    <!-- <style>
-     *{
-       font-family:Roboto,-apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-     }
-    </style> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+    
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+      body{
+        font-family: 'Rubik', sans-serif;
+        margin: 0; 
+        padding: 0;
+        
+      }
+      header{
+        position: relative;
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 10px;
+        background: #ffffff;
+        box-sizing: border-box;
+        border-radius: 4px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+      }
+      
+      .logo{
+        color: #eea51f;
+        height: 60px;
+        font-size: 36px;
+        line-height: 60px;
+        padding: 0 20px;
+        
+        text-align: center;
+        box-sizing: border-box;
+        float: left;
+        font-weight: 700;
+        text-decoration:none ;
+      }
+      nav{
+        float: right;
+
+      }
+      .clearfix{
+        clear: both;
+      }
+      nav ul{
+        margin: o;
+        padding: 0;
+        display: flex;
+      }
+      nav ul li {
+        list-style: none;
+      }
+      nav ul li a{
+        display: block;
+        margin: 10px 0px;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #262626;
+      }
+      nav ul li a.active,nav ul li a:hover{
+        background: #eea51f;
+        color: #ffffff;
+        transition: 0.5s;
+
+      }
+     @media(max-width: 1200px)
+      {
+        header
+        {
+          margin: 20px;
+        }
+      }
+      @media(max-width: 768px)
+      {
+        .menu-toggle
+        {
+          display: block;
+          width: 40px;
+          height: 40px;
+          margin: 10px;
+          
+          float: right;
+          cursor: pointer;
+          text-align: center;
+          font-size: 30px;
+          color: #eea51f;
+        }
+        .menu-toggle:before
+        {
+          content:'\f0c9';
+          font-family: fontAwesome;
+          line-height:40px;
+        }
+        .menu-toggle.active:before
+        {
+          content:'\f00d';
+          font-family: fontAwesome;
+          line-height:40px;
+        }
+        nav
+        {
+          display: none;
+        }
+        nav.active
+        {
+          display: block;
+          width: 100%;
+        }
+        nav.active ul 
+        {
+          display: block;
+        }
+        nav.active ul li a
+        {
+          margin: 0px;
+        }
+      } 
+    </style>
+    
    
 </head>
 <body> 
@@ -37,15 +149,37 @@
           </button>
         </div>
       </header> <hr>  -->
+      <header>
+        <a href="#" class="logo">Marathi360</a>
+        <div class="menu-toggle"></div>
+        <nav>
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="https://www.marathi360.in/">Our Media Site</a></li>
+            <li><a href="contact us.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div class="clearfix"></div>
+      </header>
+      <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
+      </script>
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $('.menu-toggle').click(function(){
+            $('.menu-toggle').toggleClass('active')
+            $('nav').toggleClass('active')
+          })
+        })
+      </script>
 
       
-      <header class="text-gray-600 body-font">
+      <!-- <header class="text-gray-600 body-font">
         
         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
           <a href="index.html" class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-          <!--  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-yellow-500 rounded-full" viewBox="0 0 24 24">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-yellow-500 rounded-full" viewBox="0 0 24 24">
               <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-            </svg> -->
+            </svg> 
             <span class="ml-3 font-bold text-xl">Marathi360</span>
           </a>
           <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-black justify-center">
@@ -53,14 +187,14 @@
             <a href="https://www.marathi360.in/" target="_blank" class="mr-5 hover:text-gray-900">Our Media Website</a>
             <a href="contact us.html" class="mr-5 hover:text-gray-900">Contact Us</a> 
             <a href="About.html" class="mr-5 hover:text-gray-900">About</a> -->
-          </nav>
-          <!-- <button class="inline-flex items-center font-bold bg-orange-500 border-0 py-1 px-3 focus:outline-none hover:bg-orange-700 rounded text-white mt-4 md:mt-0"><a href="joining page.html" target="_blank" rel="noopener noreferrer"> Join Now WhtasApp Magzine</a>
+          <!-- </nav>
+           <button class="inline-flex items-center font-bold bg-orange-500 border-0 py-1 px-3 focus:outline-none hover:bg-orange-700 rounded text-white mt-4 md:mt-0"><a href="joining page.html" target="_blank" rel="noopener noreferrer"> Join Now WhtasApp Magzine</a>
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
-          </button> -->
+          </button> 
         </div>
-      </header> <hr>
+      </header> <hr>  -->
      
         <!-- marathi360 short info  -->
         <section class="text-gray-600 body-font">
