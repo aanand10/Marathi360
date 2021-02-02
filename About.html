@@ -8,121 +8,12 @@
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
     <link rel="stylesheet" href="main.scss">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" > -->
+    <link rel="stylesheet" href="nav_style.css">
+    <!-- fav con -->
+    <link rel="shortcut icon" type="image/jpg" href="logo_png/logo.png"/>
     
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
-
-      body{
-        font-family: 'Rubik', sans-serif;
-        margin: 0; 
-        padding: 0;
-        
-      }
-      header{
-        position: relative;
-        max-width: 1200px;
-        margin: 20px auto;
-        padding: 10px;
-        background: #ffffff;
-        box-sizing: border-box;
-        border-radius: 4px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-      }
-      
-      .logo{
-        color: #eea51f;
-        height: 60px;
-        font-size: 36px;
-        line-height: 60px;
-        padding: 0 20px;
-        
-        text-align: center;
-        box-sizing: border-box;
-        float: left;
-        font-weight: 700;
-        text-decoration:none ;
-      }
-      nav{
-        float: right;
-
-      }
-      .clearfix{
-        clear: both;
-      }
-      nav ul{
-        margin: o;
-        padding: 0;
-        display: flex;
-      }
-      nav ul li {
-        list-style: none;
-      }
-      nav ul li a{
-        display: block;
-        margin: 10px 0px;
-        padding: 10px 20px;
-        text-decoration: none;
-        color: #262626;
-      }
-      nav ul li a.active,nav ul li a:hover{
-        background: #eea51f;
-        color: #ffffff;
-        transition: 0.5s;
-
-      }
-     @media(max-width: 1200px)
-      {
-        header
-        {
-          margin: 20px;
-        }
-      }
-      @media(max-width: 768px)
-      {
-        .menu-toggle
-        {
-          display: block;
-          width: 40px;
-          height: 40px;
-          margin: 10px;
-          
-          float: right;
-          cursor: pointer;
-          text-align: center;
-          font-size: 30px;
-          color: #eea51f;
-        }
-        .menu-toggle:before
-        {
-          content:'\f0c9';
-          font-family: fontAwesome;
-          line-height:40px;
-        }
-        .menu-toggle.active:before
-        {
-          content:'\f00d';
-          font-family: fontAwesome;
-          line-height:40px;
-        }
-        nav
-        {
-          display: none;
-        }
-        nav.active
-        {
-          display: block;
-          width: 100%;
-        }
-        nav.active ul 
-        {
-          display: block;
-        }
-        nav.active ul li a
-        {
-          margin: 0px;
-        }
-      } 
-    </style>
+    
     
      
 </head>
@@ -134,12 +25,15 @@
       <nav>
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="joining page.html" >Join WhtasApp Magzine</a></li>
           <li><a href="https://www.marathi360.in/">Our Media Site</a></li>
           <li><a href="contact us.html">Contact Us</a></li>
         </ul>
       </nav>
       <div class="clearfix"></div>
     </header>
+
+    <!--********** script part  **********-->
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
     </script>
     <script type="text/javascript">
@@ -151,6 +45,24 @@
       })
     </script>
 
+    <!--********** Fotter part  **********-->
+    <footer>
+      <div class="footer-content">
+        <h3>Marathi360</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nihil officiis vel quibusdam laudantium.</p>
+        <ul class="socials">
+          <li><a href="http://"><i class="fa fa-facebook-official"></i></a></li>
+          <li><a href="http://"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="http://"><i class="fa fa-whatsapp"></i></a></li>
+          <li><a href="http://"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="http://"><i class="fa fa-youtube-play"></i></a></li>
+          <li><a href="http://"><i class="fa fa-telegram"></i></a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>copyright &copy;2021 Marathi360 WhatsApp Magzine <span>AnaDev</span> </p>
+      </div>
+    </footer>
      
      
 
