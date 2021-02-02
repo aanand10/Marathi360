@@ -5,32 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <link rel="stylesheet" href="nav_style.css">
+    <!-- fav con -->
+    <link rel="shortcut icon" type="image/jpg" href="logo_png/logo.png"/>
 </head>
 <body>
    <!-- navbar part  -->
    
-   <header class="text-gray-600 body-font">
-        
-    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-      <a href="index.html" class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-      <!--  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-yellow-500 rounded-full" viewBox="0 0 24 24">
-          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-        </svg> -->
-        <span class="ml-3 font-bold text-xl">Marathi360</span>
-      </a>
-      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-black justify-center">
-        <a href="index.html" class="mr-5 hover:text-gray-900 ">Home</a>
-        <a href="https://www.marathi360.in/" target="_blank" class="mr-5 hover:text-gray-900">Our Media Website</a>
-        <a href="contact us.html" class="mr-5 hover:text-gray-900 text-red-700">Contact Us</a>
-        <!-- <a href="Terms and conditions.html" class="mr-5 hover:text-gray-900">Terms and Conditions</a> -->
+     <!-- navbar part  -->
+     <header>
+      <a href="#" class="logo">Marathi360</a>
+      <div class="menu-toggle"></div>
+      <nav>
+        <ul>
+          <li><a href="index.html" >Home</a></li>
+          <li><a href="joining page.html" >Join WhtasApp Magzine</a></li>
+          <li><a href="https://www.marathi360.in/">Our Media Site</a></li>
+          <li><a href="contact us.html" class="active">Contact Us</a></li>
+        </ul>
       </nav>
-      <!-- <button class="inline-flex items-center font-bold bg-orange-500 border-0 py-1 px-3 focus:outline-none hover:bg-orange-700 rounded text-white mt-4 md:mt-0"><a href="joining page.html" target="_blank" rel="noopener noreferrer"> Join Now WhtasApp Magzine</a>
-        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-          <path d="M5 12h14M12 5l7 7-7 7"></path>
-        </svg>
-      </button> -->
-    </div>
-  </header> <hr>
+      <div class="clearfix"></div>
+    </header>
+
+    <!--********** script part  **********-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.menu-toggle').click(function(){
+          $('.menu-toggle').toggleClass('active')
+          $('nav').toggleClass('active')
+        })
+      })
+    </script>
   <section class="text-gray-600 body-font relative">
     <div class="container px-5 py-24 mx-auto">
       <div class="flex flex-col text-center w-full mb-12">
@@ -93,6 +101,27 @@
       </div>
     </div>
   </section>
+  <hr>
+
+   <!--********** Fotter part  **********-->
+   <footer>
+    <div class="footer-content">
+      <h3 class="footer-title">Marathi360</h3>
+      <p>ताज्या अपडेट्स मिळवण्यासाठी आम्हाला सोशल मीडियावर फॉलो करा.</p>
+      <ul class="socials">
+        <li><a target="_blank" href="https://www.facebook.com/marathi360.in/"><i class="fa fa-facebook-official"></i></a></li>
+        <li><a target="_blank" href="https://instagram.com/marathi360.in?igshid=3er9cvgpfga9"><i class="fa fa-instagram"></i></a></li>
+        <li><a target="_blank" href="http://"><i class="fa fa-whatsapp"></i></a></li>
+        <li><a target="_blank" href="https://twitter.com/marathi360?s=09"><i class="fa fa-twitter"></i></a></li>
+        <li><a target="_blank" href="https://youtube.com/channel/UCl6sylg-psb838PRIohoXVg"><i class="fa fa-youtube-play"></i></a></li>
+        <li><a target="_blank" href="https://t.me/Marathi360_Official"><i class="fa fa-telegram"></i></a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>copyright &copy;2021 Marathi360 WhatsApp Magzine <span></span> </p>
+    </div>
+  </footer>
+
       
     
 </body>
