@@ -9,6 +9,7 @@
         margin: 0; 
         padding: 0;
         box-sizing: border-box;
+        overflow: hidden;
       }
       /*********** header part ***********/
       header{
@@ -115,7 +116,42 @@
         {
           margin: 0px;
         }
-      } 
+      }
+
+       /*********** Joining form part ***********/
+       section{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           min-height: 100vh;
+           background: linear-gradient(to bottom,#f1f4f9,#dff1ff);
+       }
+       section .color{
+           position: relative;
+       }
+       section .color:nth-child(1){
+           top: -350px;
+           width: 600px;
+           height: 600px;
+           background: orange;
+       }
+       section .color:nth-child(2){
+           bottom: -150px;
+           left: 100px;
+           width: 500px;
+           height: 500px;
+           background:#ff359b;
+       }
+
+
+
+
+
+
+
+
+
+
        /*********** Fotter Part ***********/
 
       footer{
