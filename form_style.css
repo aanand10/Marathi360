@@ -39,7 +39,7 @@ section .color:nth-child(3){
     background:#acf3e7;
 }
 .box{
-    position: absolute;
+    position: relative;
 }
 .container{
     width: 400px;
