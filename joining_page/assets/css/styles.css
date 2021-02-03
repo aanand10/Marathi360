@@ -130,10 +130,16 @@ img{
   color: var(--first-color-dark);
 }
 
+/* .login__input::placeholder{
+  font-size: var(--normal-font-size);
+  font-family: var(--body-font);
+  color: var(--first-color-light);
+} */
 .login__input::placeholder{
   font-size: var(--normal-font-size);
   font-family: var(--body-font);
   color: var(--first-color-light);
+  background-color: white;
 }
 
 .login__forgot{
