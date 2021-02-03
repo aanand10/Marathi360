@@ -138,7 +138,7 @@ img{
 .login__input::placeholder{
   font-size: var(--normal-font-size);
   font-family: var(--body-font);
-  color: var(--first-color-light);
+  color: black;
   background-color: white;
 }
 
@@ -258,3 +258,23 @@ img{
     bottom: -5.5rem;
   }
 }
+   /* footer  */
+.footer-bottom {
+  background: rgba(245, 222, 179, 0.671);
+  width: 100%;
+  height: fit-content;
+  padding: 10px 0;
+  text-align: center;
+
+}
+  .footer-bottom p a{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #000000;
+
+}
+ .anand{
+  font-weight: 700;
+ }

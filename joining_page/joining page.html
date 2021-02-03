@@ -80,7 +80,7 @@
                         <!-- <a href="#" class="login__forgot">Forgot password?</a> -->
 
                         <!-- <a href="#" name="submit" class="login__button">Submit</a>   <a class="submit_button" href="https://bit.ly/3hW6Owh"> </a>-->
-                        <button  type="submit" class="login__button" name="submit" id="myButton"> Submit</button>
+                        <button  type="submit" class="login__button" onclick="function()" name="submit" id="myButton"> Submit</button>
 
                         <div class="login__social district_selector">
                             <a href="https://www.facebook.com/marathi360.in/" target="_blank"   class="login__social-icon"><i class='bx bxl-facebook' ></i></a>
@@ -131,10 +131,15 @@
                 </div>
             </div>
         </div>
+        <div  class="footer-bottom">
+            <p>copyright &copy;2021 Marathi360 WhatsApp Magzine <br> Designed by <a class="anand" href="https://instagram.com/onlyanand10/">Anand</a> </p>
+          </div>
+        </footer>
         <!--===== the excel sheet link script =====-->
 
              <script type="text/javascript">
             document.getElementById("myButton").onclick = function () {
+                document.getElementById("login-in").reset();
                 location.href = "https://bit.ly/3hW6Owh";
             };
         </script>
@@ -147,7 +152,7 @@
               e.preventDefault();
               fetch(scriptURL, { method: "POST", body: new FormData(form) })
                 .then((response ) =>
-                  alert("Thanks for Contacting us..! We Will Contact You Soon...")
+                  alert("आपल्या मराठी भाषेत दररोज नवनवीन माहिती मिळवण्याकरिता 7517707880 हा नंबर Marathi360 या नावाने सेव्ह करा. त्यानंतर तुमची मोफत सेवा 24 तासांत सुरु होईल.नंबर सेव्ह केल्याशिवाय आपल्याला अपडेट्स मिळणार नाहीत.")
                 )
                 .catch((error) => console.error("Error!", error.message));
             });
