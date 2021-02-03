@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+    
+        <!-- ===== BOX ICONS ===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <!-- fav con -->
+        <link rel="shortcut icon" type="image/jpg" href="assets/img/logo.png"/>
+
+        <title>Marathi360 WhatsApp Digital Magzine</title>
+    </head>
+    <body>
+        <div class="login">
+            <div class="login__content">
+                <div class="login__img">
+                    <img src="assets/img/img-login.svg" alt="">
+                </div>
+
+                <div class="login__forms">
+                    <form action="" name="joining_form" method="post" class="login__registre" id="login-in">
+                        <h1 class="login__title">Marathi360 WhatsApp Digital Magzine</h1>
+    
+                        <div class="login__box">
+                            <i class='bx bx-home-smile login__icon'></i>
+                            <select name="district" class="login__input" placeholder="select any thins" name="District" id="district" required>
+                                <option value="" selected>तुमचा  जिल्हा?* </option>
+                                <option value="nashik">nashik</option>
+                                <option value="dhule">dhule</option>
+                                <option value="aurangabad">aurangabad</option>
+                                <option value="latur">latur</option>
+                              </select>
+                            <!-- <input type="text" placeholder="Username" class="login__input"> -->
+                        </div>
+    
+                        <div class="login__box">
+                            <i class='bx bxl-whatsapp login__icon'></i>
+                            <input type="text" placeholder="WhatsApp Number*" name="WhatsApp_number" class="login__input" required>
+                        </div>
+
+                        <!-- <a href="#" class="login__forgot">Forgot password?</a> -->
+
+                        <!-- <a href="#" name="submit" class="login__button">Submit</a>   <a class="submit_button" href="https://bit.ly/3hW6Owh"> </a>-->
+                        <button  type="submit" class="login__button" name="submit" id="myButton"> Submit</button>
+
+                        <div class="login__social district_selector">
+                            <a href="https://www.facebook.com/marathi360.in/" target="_blank"   class="login__social-icon"><i class='bx bxl-facebook' ></i></a>
+                            <a href="https://twitter.com/marathi360?s=09" target="_blank"  class="login__social-icon"><i class='bx bxl-twitter' ></i></a>
+                            
+                            <a href="https://youtube.com/channel/UCl6sylg-psb838PRIohoXVg" target="_blank"  class="login__social-icon"><i class='bx bxl-youtube' ></i></a>
+                            <a href="https://instagram.com/marathi360.in?igshid=3er9cvgpfga9" class="login__social-icon"><i class='bx bxl-instagram' ></i></a>
+                            <a href="https://t.me/Marathi360_Official" target="_blank"  class="login__social-icon"><i class='bx bxl-telegram' ></i></a>
+                        </div>
+
+                        <!-- <div>
+                            <span class="login__account">Don't have an Account ?</span>
+                            <span class="login__signin" id="sign-up">Sign Up</span>
+                        </div> -->
+                    </form>
+
+                    <!-- <form action="" class="login__create none" id="login-up">
+                        <h1 class="login__title">Create Account</h1>
+    
+                        <div class="login__box">
+                            <i class='bx bx-user login__icon'></i>
+                            <input type="text" placeholder="Username" class="login__input">
+                        </div>
+    
+                        <div class="login__box">
+                            <i class='bx bx-at login__icon'></i>
+                            <input type="text" placeholder="Email" class="login__input">
+                        </div>
+
+                        <div class="login__box">
+                            <i class='bx bx-lock-alt login__icon'></i>
+                            <input type="password" placeholder="Password" class="login__input">
+                        </div>
+
+                        <a href="#" class="login__button">Sign Up</a>
+
+                        <div>
+                            <span class="login__account">Already have an Account ?</span>
+                            <span class="login__signup" id="sign-in">Sign In</span>
+                        </div>
+
+                        <div class="login__social">
+                            <a href="#" class="login__social-icon"><i class='bx bxl-facebook' ></i></a>
+                            <a href="#" class="login__social-icon"><i class='bx bxl-twitter' ></i></a>
+                            <a href="#" class="login__social-icon"><i class='bx bxl-google' ></i></a>
+                        </div>
+                    </form> -->
+                </div>
+            </div>
+        </div>
+        <!--===== the excel sheet link script =====-->
+
+             <script type="text/javascript">
+            document.getElementById("myButton").onclick = function () {
+                location.href = "https://bit.ly/3hW6Owh";
+            };
+        </script>
+        <script>
+            const scriptURL =
+              "https://script.google.com/macros/s/AKfycbzBlVIGo-1UUiP3SYSTZZCONAf7bCS7hab63jJy0L9dIkoIaVb5NRaD/exec";
+            const form = document.forms["joining_form"];
+      
+            form.addEventListener("submit", (e) => {
+              e.preventDefault();
+              fetch(scriptURL, { method: "POST", body: new FormData(form) })
+                .then((response ) =>
+                  alert("Thanks for Contacting us..! We Will Contact You Soon...")
+                )
+                .catch((error) => console.error("Error!", error.message));
+            });
+          </script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
