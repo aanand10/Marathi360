@@ -42,6 +42,7 @@ section .color:nth-child(3){
     position: relative;
 }
 .container{
+    position: relative;
     width: 400px;
     min-width: 400px;
     background: rgba(255, 255, 255, 0.1);
