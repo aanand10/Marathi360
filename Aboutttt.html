@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <!-- styling  -->
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
+    <link rel="stylesheet" href="main.scss">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" > -->
+    <link rel="stylesheet" href="nav_style.css">
+    <!-- fav con -->
+    <link rel="shortcut icon" type="image/jpg" href="logo_png/logo.png"/>
+    
+    
+    
+     
+</head>
+<body>
+    <!-- navbar part  -->
+    <header>
+      <a href="#" class="logo">Marathi360</a>
+      <div class="menu-toggle"></div>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="joining page.html" >Join WhtasApp Magzine</a></li>
+          <li><a href="https://www.marathi360.in/">Our Media Site</a></li>
+          <li><a href="contact us.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="clearfix"></div>
+    </header>
+
+    <!--********** script part  **********-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.menu-toggle').click(function(){
+          $('.menu-toggle').toggleClass('active')
+          $('nav').toggleClass('active')
+        })
+      })
+    </script>
+
+    <!--********** Fotter part  **********-->
+    <footer>
+      <div class="footer-content">
+        <h3>Marathi360</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nihil officiis vel quibusdam laudantium.</p>
+        <ul class="socials">
+          <li><a href="http://"><i class="fa fa-facebook-official"></i></a></li>
+          <li><a href="http://"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="http://"><i class="fa fa-whatsapp"></i></a></li>
+          <li><a href="http://"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="http://"><i class="fa fa-youtube-play"></i></a></li>
+          <li><a href="http://"><i class="fa fa-telegram"></i></a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>copyright &copy;2021 Marathi360 WhatsApp Magzine <span>AnaDev</span> </p>
+      </div>
+    </footer>
+     
+     
+
+
+
+
+</body>
+</html>
