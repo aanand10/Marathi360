@@ -199,8 +199,10 @@ img{
   color: var(--first-color-dark);
   margin: 0 1rem;
 }
-
-
+.login__social a:hover i {
+  /* color: #eea51f; */
+  color: #e6872f;
+}
 /*Show login*/
 .block{
   display: block;
