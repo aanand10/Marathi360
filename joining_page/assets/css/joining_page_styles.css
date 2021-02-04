@@ -189,7 +189,7 @@ img{
   color: var(--first-color);
   cursor: pointer;
 }
-.dist_back{
+option,select{
   background:white;
 }
 
