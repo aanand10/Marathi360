@@ -189,6 +189,9 @@ img{
   color: var(--first-color);
   cursor: pointer;
 }
+.dist_back{
+  background:white;
+}
 
 .login__social{
   margin-top: 2rem;
