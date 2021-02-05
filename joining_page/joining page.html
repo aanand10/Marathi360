@@ -30,7 +30,7 @@
                         <div class="login__box">
                             <i class='bx bx-home-smile login__icon'></i>
                             <select  class="login__input" placeholder="select any thin" name="District" id="district" required>
-                                <option class="dist_back" value="" selected>तुमचा  जिल्हा?*. </option>
+                                <option class="dist_back" value="" selected>तुमचा  जिल्हा?* </option>
                                 
                                 <option value="अकोला">अकोला</option>
                                 <option value="अमरावती">अमरावती</option>
@@ -138,13 +138,14 @@
         </footer>
         <!--===== the excel sheet link script =====-->
 
-             <script type="text/javascript">
+             <!-- <script type="text/javascript">
             document.getElementById("myButton").onclick = function () {
                 document.getElementById("login-in").reset();
-                location.href = "https://bit.ly/3hW6Owh";
+                 location.href = "https://bit.ly/3hW6Owh";
             };
-        </script>
+        </script> -->
         <script>
+            
             const scriptURL =
               "https://script.google.com/macros/s/AKfycbzBlVIGo-1UUiP3SYSTZZCONAf7bCS7hab63jJy0L9dIkoIaVb5NRaD/exec";
             const form = document.forms["joining_form"];
@@ -158,6 +159,13 @@
                 .catch((error) => console.error("Error!", error.message));
             });
           </script>
+
+        <!-- <script type="text/javascript">
+            document.getElementById("myButton").onclick = function () {
+            document.getElementById("login-in").reset();
+             location.href = "https://bit.ly/3hW6Owh";
+          };
+        </script> -->
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
